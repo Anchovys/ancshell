@@ -1,0 +1,6 @@
+# This file using for description Dll files,
+# which should be loaded on start AncShell.exe
+#
+Upgrade.dll
+Log.dll
+Communtcate.dll
