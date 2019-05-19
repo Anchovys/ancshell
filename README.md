@@ -2,6 +2,9 @@
 The special command interpreter. Can dynamic connect .DLL libraries
 
 How to add DLL for load:
+
+
+
 0. Run and Close AncShell (if file `adjuncts.txt` is not exsists),
 1. Edit `adjuncts.txt` and add line `yourlib.dll` to end line file,
 2. Save and close file `adjuncts.txt`,
