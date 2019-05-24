@@ -23,27 +23,36 @@ namespace Addons
 {
     class __loadme
     {
-        public bool Register( Type ShellType ) {
+        public bool Register( Type ShellType = null ) {
             
-            //we return true if lib success loaded
+            //we return true if all success loaded
             return true;
+            
+            //or return false if all bad
+            #return false;
         }
         
-        public bool RunCommand(string cmd, string[] args) {
+        public bool RunCommand( string cmd, string[] args ) {
 
             switch (cmd) {
 
+                default: 
+                
+                    return false; //nothing to do 
+                    
+                break;
+               
                 case "somecmd":
 
-                      //place here your code
+                      /*
+                      place here your code
+                      */
                       
-                    return true;
-                    break;
+                       return true; //command successful execute
+                       
+                 break;
 
             }
-
-            return false; //nothing to do
-
         }
     }
 }
