@@ -10,7 +10,7 @@ How to add DLL for load:
 2. Save and close file `adjuncts.txt`,
 3. Run AncShell.exe!
 
-Your DLL library should have this  code for init by Anchsell:
+Your DLL library should have this  code for init by Anchshell:
 
 `````csharp
 using System;
@@ -29,7 +29,7 @@ namespace Addons
             return true;
             
             //or return false if all bad
-            #return false;
+            //return false;
         }
         
         public bool RunCommand( string cmd, string[] args ) {
